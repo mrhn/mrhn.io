@@ -14079,7 +14079,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".gradient-down-right {\n  border-width: 3px;\n  border-style: solid;\n  border-left-style: none;\n  -o-border-image:\n            linear-gradient(\n                    to bottom,\n                    black,\n                    rgba(0, 0, 0, 0)\n            ) 1 100%;\n     border-image:\n            linear-gradient(\n                    to bottom,\n                    black,\n                    rgba(0, 0, 0, 0)\n            ) 1 100%;\n}\n.gradient-down-up {\n  border-width: 3px;\n  border-style: solid;\n  border-left-style: none;\n  -o-border-image:\n            linear-gradient(\n                    to top,\n                    black,\n                    rgba(0, 0, 0, 0)\n            ) 1 100%;\n     border-image:\n            linear-gradient(\n                    to top,\n                    black,\n                    rgba(0, 0, 0, 0)\n            ) 1 100%;\n}\n", ""]);
+exports.push([module.i, ".dots-bottom {\n  border-color: black;\n  border-bottom-width: 3px;\n  border-bottom-style: dotted;\n}\n.dots-right {\n  border-color: black;\n  border-right-width: 3px;\n  border-right-style: dotted;\n}\n.margin-less {\n  margin-left: 0;\n  margin-right: 0;\n}\n", ""]);
 
 // exports
 
@@ -32340,67 +32340,44 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "columns  mt-48" }, [
-        _c("div", { staticClass: "column is-one-quarter gradient-down-up" }, [
-          _c("h1", { staticClass: "title text-center" }, [_vm._v("mrhn.io")])
+    return _c("div", { staticClass: "section" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "columns mt-32 margin-less dots-bottom" }, [
+          _c("div", { staticClass: "column is-one-quarter dots-right" }, [
+            _c("h1", { staticClass: "title text-center" }, [_vm._v("mrhn.io")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column gradient-right" }, [
+            _c(
+              "p",
+              { staticClass: "bd-notification is-info is-three-quarters" },
+              [_vm._v("First column")]
+            )
+          ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column gradient-right" }, [
-          _c(
-            "p",
-            { staticClass: "bd-notification is-info is-three-quarters" },
-            [_vm._v("First column")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "columns",
-          staticStyle: {
-            "border-top-style": "solid",
-            "border-top-width": "3px",
-            "border-color": "#000000"
-          }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "column is-one-quarter gradient-down-right" },
-            [
-              _c(
-                "p",
-                { staticClass: "bd-notification is-info is-one-quarter" },
-                [_vm._v("menu 1")]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "bd-notification is-info is-one-quarter" },
-                [_vm._v("menu 2")]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "bd-notification is-info is-one-quarter" },
-                [_vm._v("menu 2")]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "bd-notification is-info is-one-quarter" },
-                [_vm._v("menu 2")]
-              ),
-              _vm._v(" "),
-              _c(
-                "p",
-                { staticClass: "bd-notification is-info is-one-quarter" },
-                [_vm._v("menu 2")]
-              )
-            ]
-          ),
+        _c("div", { staticClass: "columns margin-less" }, [
+          _c("div", { staticClass: "column is-one-quarter dots-right" }, [
+            _c("p", { staticClass: "bd-notification is-info is-one-quarter" }, [
+              _vm._v("menu 1")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "bd-notification is-info is-one-quarter" }, [
+              _vm._v("menu 2")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "bd-notification is-info is-one-quarter" }, [
+              _vm._v("menu 2")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "bd-notification is-info is-one-quarter" }, [
+              _vm._v("menu 2")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "bd-notification is-info is-one-quarter" }, [
+              _vm._v("menu 2")
+            ])
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "column" }, [
             _c(
@@ -32409,8 +32386,8 @@ var staticRenderFns = [
               [_vm._v("First column")]
             )
           ])
-        ]
-      )
+        ])
+      ])
     ])
   }
 ]
